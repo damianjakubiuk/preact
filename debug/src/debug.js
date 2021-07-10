@@ -251,9 +251,9 @@ export function initDebug() {
 	};
 
 	options._hook = (comp, index, type) => {
-		if (!comp || !hooksAllowed) {
-			throw new Error('Hook can only be invoked from render methods.');
-		}
+// 		if (!comp || !hooksAllowed) {
+// 			throw new Error('Hook can only be invoked from render methods.');
+// 		}
 
 		if (oldHook) oldHook(comp, index, type);
 	};
